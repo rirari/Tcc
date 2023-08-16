@@ -147,7 +147,7 @@ main h1 {
 }
 
 .container3 {
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
     text-align: justify;
@@ -157,7 +157,7 @@ main h1 {
 }
 
 .container4 {
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -209,6 +209,10 @@ main h1 {
 }
 
 @media (max-width: 768px) {
+    .img1 {
+        margin-right: 0;
+    }
+
     .container {
         width: 100%;
         flex-direction: column;

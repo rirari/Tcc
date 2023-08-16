@@ -9,11 +9,11 @@ body {
         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #fdf4ff;
     overflow-x: hidden;
-    color: #0C4A6E; 
+    color: #0C4A6E;
     font-size: 16px !important;
 }
 
-main{
+main {
     width: 100%;
 }
 
@@ -22,7 +22,7 @@ header {
     color: #FFF6F6;
 }
 
-.navbar.navbar-expand-lg.navbar-dark.bg-dark{
+.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     background-color: #075985 !important;
 }
 
@@ -36,13 +36,37 @@ a {
     color: #FFF6F6;
 }
 
-#botao{
+#botao {
     color: white !important;
+}
+
+.btn-custom{
+	padding: 1px 15px 3px 2px;
+	border-radius: 50px;
+}
+
+.botaoContato {
+    border-radius: 100px;
 }
 
 a:hover {
     color: #c9c9c9;
     text-decoration: none;
+}
+
+
+@media (max-width: 1228px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .Mamacita {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 400px) {
@@ -54,7 +78,7 @@ a:hover {
         font-size: 20px;
     }
 
-    #Logo {
-        width: 40% !important;
+    .logo {
+        width: 100% !important;
     }
 }
