@@ -56,9 +56,6 @@ p {
     margin-bottom: 220px;
 }
 
-.caixasDeTexto {
-    margin: 40px 40px 40px 40px;
-}
 
 .caixasDeTexto2 {
     margin: 40px 0px 40px 80px;
@@ -84,3 +81,11 @@ h3 {
     margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    .ImagensFormas{
+        width: 60%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}

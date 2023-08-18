@@ -55,30 +55,22 @@ a:hover {
 }
 
 
-@media (max-width: 1228px) {
+@media (max-width: 911px) {
     h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
-    .Mamacita {
-        font-size: 20px;
-    }
-
-    .logo {
-        width: 100% !important;
+    #logo {
+        width: 60% !important;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 20px;
     }
 
-    .Mamacita {
-        font-size: 20px;
-    }
-
-    .logo {
-        width: 100% !important;
+    #logo {
+        width: 50% !important;
     }
 }
