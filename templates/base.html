@@ -31,13 +31,13 @@
             <div class="col-lg-10 col-md-10 p-0 m-0 collapse navbar-collapse" id="navbarNav">
                 <ul class="nav justify-content-center col-12 navbar-nav mr-0 ml-0 p-0 text-start">
                     <li class="nav-item">
-                        <a class="nav-link active mr-4" href="#">Início</a>
+                        <a class="nav-link active mr-4" href="{% url 'index' %}">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mr-4" href="#">Formas</a>
+                        <a class="nav-link active mr-4" href="{% url 'pagina_formas' %}">Formas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mr-4" href="#">Funções</a>
+                        <a class="nav-link active mr-4" href="{% url 'pagina_funções' %}">Funções</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active mr-4" href="#">Quem é o autor?</a>
@@ -94,13 +94,13 @@
                     <h5 class="text-uppercase">Navegação</h5>
                     <ul class="list-unstyled mb-0 text-left">
                         <li>
-                            <a style="margin: 0%;" href="#!" class="text-white">Home</a>
+                            <a style="margin: 0%;" href="{% url 'index' %}" class="text-white">Home</a>
                         </li>
                         <li>
-                            <a style="margin: 0%;" href="#!" class="text-white">Formas</a>
+                            <a style="margin: 0%;" href="{% url 'pagina_formas' %}" class="text-white">Formas</a>
                         </li>
                         <li>
-                            <a style="margin: 0%;" href="#!" class="text-white">Funções</a>
+                            <a style="margin: 0%;" href="{% url 'pagina_funções' %}" class="text-white">Funções</a>
                         </li>
                         <li>
                             <a style="margin: 0%;" href="#!" class="text-white">Quem é o autor?</a>

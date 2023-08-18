@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Funções
+{% endblock %}
+
+{% block center %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="../static/css/styles_F&F.css" rel="stylesheet" />
+
+<section id="intro">
+    <h1><strong>Funções</strong></h1>
+    <img src="img/Formas/Info-1.svg" alt="Imagem de apresentação de formas" height="450px" width="700px">
+    <div class="caixasDeTexto">
+        <p> Assim como cada uma das células do nosso corpo tem uma função, as menções à 
+            voz de outrem em textos <br> acadêmicos também assumem suas próprias funções, isto é, 
+            são utilizadas por aquele que referencia em busca de <br> diferentes sentidos e propósitos. Segundo Boch e Grossmann (2002), 
+            o uso do discurso do outro pode assumir <br> características que se resumem às seguintes categorias:
+        </p>
+
+        <p><strong>Obs.: Os exemplos dados a seguir são produções de pesquisadores 
+            iniciantes, retiradas de relatórios de <br> pesquisa. Dessa forma, manteremos os nomes dos autores em sigilo por uma questão ética.
+        </strong></p>
+    </div>
+</section>
+
+<hr style="width: 90%; margin: auto; margin-bottom: 90px; margin-top: 90px;">
+
+{% for funções in funções %}
+
+<div class="container">
+    <img src="{{ funções.imagem.url }}" alt="Imagem ilustrativa para a forma" height="400px" width="400px">
+    <div class="caixasDeTexto2">
+        <h3>{{ funções.nome }}</h3>
+        <div class="TextosFormas">
+            <p>{{ funções.descricao }}</p>
+            <p><strong>{{ funções.citacao }}</strong></p>
+            <p>{{ funções.referencia }}</p>
+        </div>
+    </div>
+</div>
+
+<hr style="width: 90%; margin: auto; margin-bottom: 90px; margin-top: 90px;">
+
+{% endfor %}
+
+{% endblock %}
