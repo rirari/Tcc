@@ -19,3 +19,6 @@ def pagina_funções (request):
         'funções': funções
     }
     return render(request, 'core/funcoes.html',context)
+
+def pagina_sobre (request):
+    return render(request, 'core/sobre.html')
