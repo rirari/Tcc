@@ -38,6 +38,22 @@ p {
     margin-bottom: 80px;
 }
 
+.boxazul {
+    width: 100%;
+    background-color: #075985;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 16% 0px 16% 0px;
+}
+
+/* #boxazul {
+    width: 100%;
+    background-color: #075985;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 16% 0px 16% 0px;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -47,6 +63,20 @@ p {
     align-items: center;
     margin-bottom: 80px;
 }
+
+.containerBox {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+#center {
+    display: flex;
+    margin: auto;
+} */
 
 .container2 {
     width: 100%;

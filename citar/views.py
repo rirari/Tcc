@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Formas,Funções
+from .models import Formas,Funções,Plagio
 
 # Create your views here.
 
@@ -19,6 +19,13 @@ def pagina_funções (request):
         'funções': funções
     }
     return render(request, 'core/funcoes.html',context)
+
+def pagina_plagio (request):
+    plagios = Plagio.objects.all()
+    context ={
+        'plagios': plagios
+    }
+    return render(request, 'core/plagio.html',context)
 
 def pagina_sobre (request):
     return render(request, 'core/sobre.html')

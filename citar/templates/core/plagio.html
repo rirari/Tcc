@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Quem é o autor?
+{% endblock %}
+
+{% block center %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="../static/css/styles_F&F.css" rel="stylesheet" />
+
+<section class="container-fluid p-0 mb-5">
+    <section class="p-0 mt-5" id="intro">
+        <h1><strong>Quem é o autor?</strong></h1>
+    </section>
+
+    <section class="row justify-content-center align-items-center">
+        <div class="col-md-5 col-lg-5 text-center p-4">
+            <img class="img-fluid" src="../static/css/img/PersonagemPlagio.svg"
+                alt="Imagem ilustrativa para introduzir o assunto de plágio">
+        </div>
+        <div class="mt-4 col-md-5 col-lg-5 p-4 text-justify" style="width: 80%;">
+            <p>
+                O problema do plágio infelizmente ocorre de diversas formas no mundo acadêmico.
+                O plágio de trabalhos acadêmicos se trata da tomada de um texto de outra autoria
+                como seu, sem mencioná-lo ou dar os devidos créditos. Esse caso de violação dos
+                direitos autorais é tratado também na legislação diante de sua seriedade, o que
+                propõe que medidas cabíveis sejam tomadas. A Lei N° 9.610, de 19 de fevereiro de 1998,
+                aponta e regulamenta a proteção de direitos autorais ou questões equivalentes (Brasil,
+                1998).
+            </p>
+        </div>
+    </section>
+
+    <section class="row justify-content-center align-items-center mt-5 mb-5" style="background-color: #075985;">
+        <div class="mt-4 col-md-5 col-lg-5 p-4 text-justify" style="width: 80%; color: #EEEEEE;">
+            <h3 class="mb-4">Reconher a autoria é um príncipio de responsabilidade com a ciência</h3>
+            <p>
+                Historicamente, houveram vários casos de plágio no mundo científico e acadêmico.
+                Um exemplo muito ilustrado em aulas de biologia é o da cientista Rosalind Franklin,
+                essencial na descrição da estrutura em dupla hélice do DNA (ácido desoxirribonucleico).
+                Franklin teve seu trabalho plagiado pelos cientistas Francis Crick, James Watson e
+                Maurice Wilkins, esses que receberam o Prêmio Nobel de Medicina no ano de 1962 pela
+                descoberta. Hoje temos noção do quão grave foi a apropriação da autoria para o
+                reconhecimento da importância de Rosalind Franklin para a ciência.
+            </p>
+        </div>
+        <div class="col-md-5 col-lg-5 text-center p-4">
+            <img class="img-fluid mt-5 mb-5" src="../static/css/img/PersonagemRosalindPlagio.svg"
+                alt="Imagem ilustrativa com Rosalind Franklin">
+        </div>
+    </section>
+    <!-- 
+    <section>
+        <div class="containerBox" id="boxazul">
+            <div class="mt-4 col-md-5 col-lg-5 p-4 text-justify" style="width: 80%;">
+                <p>
+                    Historicamente, houveram vários casos de plágio no mundo científico e acadêmico. 
+                    Um exemplo muito ilustrado em aulas de biologia é o da cientista Rosalind Franklin, 
+                    essencial na descrição da estrutura em dupla hélice do DNA (ácido desoxirribonucleico).
+                     Franklin teve seu trabalho plagiado pelos cientistas Francis Crick, James Watson e 
+                     Maurice Wilkins, esses que receberam o Prêmio Nobel de Medicina no ano de 1962 pela 
+                     descoberta. Hoje temos noção do quão grave foi a apropriação da autoria para o 
+                     reconhecimento da importância de Rosalind Franklin para a ciência.
+                </p>
+            </div>
+            <div class="col-md-5 col-lg-5 text-center p-4">
+                <img class="img-fluid" src="../static/css/img/PersonagemRosalindPlagio.svg"
+                    alt="Imagem ilustrativa com Rosalind Franklin">
+            </div>
+        </div>
+    </section> -->
+
+    <section class="p-0 col-md-10 col-lg-8 mt-5 mb-5" id="intro">
+        <h5>Trazemos abaixo alguns tipos de plágio e como eles podem estar configurados
+            no texto acadêmico, tudo isso seguindo a perspectiva de Sanchez e Innarelli (2012).</h5>
+
+        <hr style="width: 90%; margin: auto; margin-bottom: 50px; margin-top: 50px;">
+
+        <div class="container px-4 px-lg-5 mt-3">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-sx-1">
+                {% for plagios in plagios %}
+                <div class="col-md-6 mb-5">
+                    <div class="card" style="width: 18rem; background-color: #fdf4ff;">
+                        <img class="card-img-top" src="{{ plagios.imagem.url }}" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">{{ plagios.nome }}</h5>
+                            <p class="card-text">{{ plagios.descricao }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</section>
+
+{% endblock %}
