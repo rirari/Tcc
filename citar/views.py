@@ -8,10 +8,11 @@ def index (request):
 
 def pagina_formas (request):
     formas = Formas.objects.all()
-    context ={
+    context = {
         'formas': formas
     }
     return render(request, 'core/formas.html',context)
+
 
 def pagina_funções (request):
     funções = Funções.objects.all()

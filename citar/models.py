@@ -27,5 +27,3 @@ class Plagio(models.Model):
     nome = models.CharField(max_length=150, verbose_name='Nome do tipo de plágio')
     descricao = models.TextField(verbose_name='Descrição')
     imagem = models.ImageField(upload_to = 'imagens')
-
-
