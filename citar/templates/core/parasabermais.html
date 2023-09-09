@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Para saber mais
+{% endblock %}
+
+{% block center %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="../static/css/styles_PSM.css" rel="stylesheet" />
+
+<section class="container-fluid p-0">
+
+    <section class="p-0 mt-5" id="intro">
+        <h1><strong>Para saber mais</strong></h1>
+        <img class="img-fluid" src="../static/css/img/IntroParaSaberMais2.svg" alt="Imagem 
+        ilustrativa para introduzir o assunto da tela 'para saber mais'">
+        <div>
+            <p>
+                Links úteis de <strong>sites</strong> e <strong>ferramentas</strong> para lhe <strong>auxiliar</strong>
+                em citações e gerenciamento de referências bibliográficas!
+            </p>
+        </div>
+    </section>
+
+    <!-- <h1><strong>Para saber mais</strong></h1>
+    </section>
+
+    <section class="row justify-content-center align-items-center">
+        <div class="col-md-5 col-lg-5 text-center p-4">
+            <img class="img-fluid" src="../static/css/img/IntroParaSaberMais2.svg"
+                alt="Imagem ilustrativa para introduzir o assunto da tela 'para saber mais'">
+        </div>
+        <div class="mt-4 col-md-5 col-lg-5 p-4 text-justify" style="width: 80%;">
+            <p>
+                Links úteis de <strong>sites</strong> e <strong>ferramentas</strong> para lhe <strong>auxiliar</strong>
+                em citações e gerenciamento de referências bibliográficas!
+            </p>
+        </div> -->
+
+    <hr style="width: 90%; margin: auto; margin-bottom: 90px; margin-top: 30px; background-color: #0284C7;">
+
+    <section class="container px-4 px-lg-5 mt-3 m-0 p-0 col-md-12">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-sx-1">
+            {% for sites in sites %}
+            <div class="col-md-6 mb-5 row d-flex justify-content-center">
+                <div class="card" style="width: 22rem; background-color: #fdf4ff;">
+                    <img class="card-img-top" src="{{ sites.imagem.url }}" alt="Imagem de capa do card">
+                    <div class="card-body text-justify">
+                        <h5 class="card-title">{{ sites.nome }}</h5>
+                        <p class="card-text">{{ sites.descricao }}</p>
+                        <a href="{{ sites.link }}" target="_blank" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- <div class="container px-4 px-lg-5 mt-3 m-0">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-sx-1 justify-content-center">
+            {% for plagios in plagios %}
+            <div class="col-md-6 mb-5">
+                <div class="card" style="width: 18rem; background-color: #fdf4ff;">
+                    <img class="card-img-top" src="{{ plagios.imagem.url }}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{ plagios.nome }}</h5>
+                        <p class="card-text">{{ plagios.descricao }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div> -->
+
+
+    <div class="justify-content-center text-center d-flex mt-5 mb-2">
+        <h2>Estudos na área</h2>
+    </div>
+
+    <section class="row justify-content-center align-items-center">
+        <div class="col-md-5 col-lg-5 text-center p-0">
+            <img class="img-fluid" src="../static/css/img/Estudos.svg" alt="Imagem ilustrativa para introduzir estudos">
+        </div>
+        <div class="mt-4 col-md-5 col-lg-5 p-0 row justify-content-center align-items-center">
+            <div class="mt-4 text-justify" style="width: 80%;">
+                <p>Para que você se aprofunde mais no referencial
+                    teórico utilizado nesse site, trazemos nessa página os principais
+                    nomes que tomamos para estudos e suas respectivas produções: sejam artigos
+                    ou livros. Além de uma breve síntese dos trabalhos que tomamos como bases,
+                    ao fim de cada uma delas haverá um link de acesso ao download ou página
+                    de pesquisa dos estudos correspondentes.</p>
+            </div>
+        </div>
+    </section>
+    <hr class="mb-5"
+        style="width: 80%; margin: auto; margin-bottom: 30px; margin-top: 30px; background-color: #0284C7;">
+
+</section>
+
+{% endblock %}

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Formas,Funções,Plagio
+from .models import Formas,Funções,Plagio,Sites
 
 # Register your models here.
 
@@ -13,4 +13,12 @@ class FunçõesAdmin(admin.ModelAdmin):
 
 @admin.register(Plagio)
 class PlagioAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'descricao', 'imagem')
+    list_display = ('nomePlagio', 'descricao', 'imagem')
+
+@admin.register(Sites)
+class SitesAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'descricao', 'imagem', 'link')
+
+# @admin.register(Autores)
+# class AutoresAdmin(admin.ModelAdmin):
+#     list_display = ('nome', 'descricao', 'imagem', 'link')

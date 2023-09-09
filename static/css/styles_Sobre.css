@@ -6,37 +6,29 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #fdf4ff;
+    overflow-x: hidden;
+    color: #0C4A6E;
+    font-size: 16px !important;
 }
 
-main {
-    font-size: 14px;
-    color: #075985;
-    min-height: calc(100vh - 263px);
-}
-
-nav li,
-a {
-    justify-content: space-around;
-    display: inline;
-    line-height: 27px;
-    margin: 0px 18px 0 0;
-    margin-left: 15px;
-    text-decoration: none;
-    list-style: none;
-    color: #FFF6F6;
-}
-
-main h1 {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 48px;
-}
-
-p,
-li {
+p{
     font-size: 14px;
     line-height: 27px;
     margin: 18px 0 18px 0;
+}
+
+#intro {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.boxazul {
+    width: 100%;
+    background-color: #075985;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 16% 0px 16% 0px;
 }
 
 .logo {
@@ -58,8 +50,6 @@ li {
     display: flex;
     align-items: center;
     text-align: justify;
-    width: 800px;
-    height: 350px;
     padding: 0 60px 0 60px;
     background-color: #FFFFFF;
     border: 1px solid #0C4A6E;
@@ -86,9 +76,47 @@ main section {
 #center {
     display: flex;
     margin: auto;
+    text-align: center;
 }
 
-#parteAzul {
+#TextoBoxAzul {
+    font-size: 18px;
+}
+
+.boxAzul {
+    width: 100%;
+    background-color: #075985 !important;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 16% 0px 16% 0px;
+}
+
+#FundoBranco {
+    background-color: #FFFFFF;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 40px;
+}
+
+#FundoAzul {
+    background-color: #075985;
+    padding-top: 14%;
+    padding-bottom: 14%;
+}
+
+.caixasDeTexto {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 180px;
+    padding: 0 60px 0 60px;
+    background-color: #FFFFFF;
+    border: 1px solid #0C4A6E;
+    border-radius: 30px;
+}
+
+.parteAzul {
     width: 100%;
     height: 638px;
     background-color: #075985;
@@ -122,31 +150,31 @@ main section {
     margin-left: -10px;
 }
 
-#containerFotos{
-   margin: auto;
-   padding-top:70px;
-   padding-bottom: 60px;
-   color:#FFFFFF;
+#containerFotos {
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    color: #FFFFFF;
 }
 
-.fotos{
-    width:500px;
-    padding:20px;
-    margin:auto;
-    display:flex;
+.fotos {
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
     align-items: center;
     text-align: left;
     background-color: #0284C7;
 }
 
-.fotos img{
+.fotos img {
     margin-right: 50px;
 }
 
-.fotos p{
+.fotos p {
     font-size: 18px;
 }
 
-h4{
+h4 {
     font-size: 30px;
 }

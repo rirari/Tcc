@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from citar.views import index, pagina_formas, pagina_funções, pagina_plagio, pagina_sobre
+from citar.views import index, pagina_formas, pagina_funções, pagina_plagio, pagina_sobre, pagina_sites
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -27,4 +27,5 @@ urlpatterns = [
     path('funções/',pagina_funções,name='pagina_funções'),
     path('plagio/',pagina_plagio,name='pagina_plagio'),
     path('sobre/',pagina_sobre,name='pagina_sobre'),
+    path('parasabermais/',pagina_sites,name='pagina_sites'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -15,12 +15,12 @@
 
 <body>
     <!-- Navigation-->
-    <header id="topo" class="container-fluid justify-content-center m-auto p-4">
+    <header class="container-fluid justify-content-center m-auto p-4">
         <nav class="row navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center m-auto bg-light">
 
             <div class="col-lg-2 col-md-6 -p-0 m-0">
-                <a class="nav-link" href="#"><img id="Logo" class="img-fluid"
-                        src="../static/css/img/Logo do site.svg" alt="logo do site"></a>
+                <a class="nav-link" href="#"><img id="Logo" class="img-fluid" src="../static/css/img/Logo do site.svg"
+                        alt="logo do site"></a>
             </div>
 
             <button id="botao" class="navbar-toggler justify-content-end col-2" type="button" data-toggle="collapse"
@@ -46,7 +46,7 @@
                         <a class="nav-link active mr-4" href="#">Normas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mr-4" href="#">Para saber mais</a>
+                        <a class="nav-link active mr-4" href="{% url 'pagina_sites' %}">Para saber mais</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active mr-4" href="{% url 'pagina_sobre' %}">Sobre nós</a>
@@ -73,7 +73,6 @@
             </a>
         </section>
         <!-- Section: voltar ao topo -->
-
 
         <!-- Section: Links -->
         <section class="col-lg-12 mt-5">
@@ -142,8 +141,8 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex text-center justify-content-center">
-                    <a style="margin: 0%;" href="#"><img class="img-fluid logo"
-                            src="../static/css/img/Logo-ifrn2.svg" alt="logo do ifrn" width="70%"></a>
+                    <a style="margin: 0%;" href="#"><img class="img-fluid logo" src="../static/css/img/Logo-ifrn2.svg"
+                            alt="logo do ifrn" width="70%"></a>
                 </div>
                 <!--Grid column-->
 

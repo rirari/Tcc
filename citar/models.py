@@ -24,6 +24,28 @@ class Funções(models.Model):
         return self.nome
 
 class Plagio(models.Model):
-    nome = models.CharField(max_length=150, verbose_name='Nome do tipo de plágio')
+    nomePlagio = models.CharField(max_length=150, verbose_name='Nome do tipo de plágio')
     descricao = models.TextField(verbose_name='Descrição')
     imagem = models.ImageField(upload_to = 'imagens')
+
+    def __str__(self):
+        return self.nomePlagio
+
+class Sites(models.Model):
+    nome = models.CharField(max_length=150, verbose_name='Nome do site recomendado')
+    descricao = models.TextField(verbose_name='Descrição')
+    imagem = models.ImageField(upload_to = 'imagens')
+    link = models.TextField(verbose_name='Link para acessar o site')
+
+    def __str__(self):
+        return self.nome
+
+# class Autores(models.Model):
+#     nome = models.CharField(max_length=150, verbose_name='Nome do(a) autor(a) recomendado(a)')
+#     descricao = models.TextField(verbose_name='Descrição')
+#     imagem = models.ImageField(upload_to = 'imagens')
+#     link = models.TextField(verbose_name='Link para acessar o material')
+
+#     def __str__(self):
+#         return self.nome
+
