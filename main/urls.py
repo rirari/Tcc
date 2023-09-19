@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from citar.views import index, pagina_formas, pagina_funções, pagina_plagio, pagina_sobre, pagina_sites
+from citar.views import index, pagina_formas, pagina_funções, pagina_plagio, pagina_sobre, pagina_sites, pagina_normas
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -25,6 +25,7 @@ urlpatterns = [
     path('',index,name='index'),
     path('formas/',pagina_formas,name='pagina_formas'),
     path('funções/',pagina_funções,name='pagina_funções'),
+    path('normas/',pagina_normas,name='pagina_normas'),
     path('plagio/',pagina_plagio,name='pagina_plagio'),
     path('sobre/',pagina_sobre,name='pagina_sobre'),
     path('parasabermais/',pagina_sites,name='pagina_sites'),

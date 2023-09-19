@@ -38,8 +38,16 @@ class Sites(models.Model):
     link = models.TextField(verbose_name='Link para acessar o site')
 
     def __str__(self):
-        return self.nome
+        return
+    
+class Normas(models.Model):
+    nome = models.CharField(max_length=150, verbose_name='Nome do sistema de chamada')
+    explicacao = models.TextField(verbose_name='Explicação')
+    imagem = models.ImageField(upload_to = 'imagens')
 
+    def __str__(self):
+        return self.nome
+    
 # class Autores(models.Model):
 #     nome = models.CharField(max_length=150, verbose_name='Nome do(a) autor(a) recomendado(a)')
 #     descricao = models.TextField(verbose_name='Descrição')
