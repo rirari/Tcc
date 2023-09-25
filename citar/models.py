@@ -43,6 +43,8 @@ class Sites(models.Model):
 class Normas(models.Model):
     nome = models.CharField(max_length=150, verbose_name='Nome do sistema de chamada')
     explicacao = models.TextField(verbose_name='Explicação')
+    explicacao2 = models.TextField(verbose_name='Explicação 2')
+    explicacao3 = models.TextField(verbose_name='Explicação 3')
     imagem = models.ImageField(upload_to = 'imagens')
 
     def __str__(self):

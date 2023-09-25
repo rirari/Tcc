@@ -21,7 +21,7 @@ class SitesAdmin(admin.ModelAdmin):
 
 @admin.register(Normas)
 class NormasAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'explicacao', 'imagem',)
+    list_display = ('nome', 'explicacao', 'explicacao2', 'explicacao3','imagem',)
 
 # @admin.register(Autores)
 # class AutoresAdmin(admin.ModelAdmin):

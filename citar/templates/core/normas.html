@@ -6,53 +6,130 @@ Normas
 
 {% block center %}
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="../static/css/styles_F&F.css" rel="stylesheet" />
+
 <section class="container-fluid p-0">
     <!-- <section class="container"> -->
     <section class="p-0 mt-5" id="intro">
         <h1><strong>Normas</strong></h1>
-        <img class="img-fluid" src="../static/css/img/IntroFormas.svg" alt="Imagem de apresentação de formas">
+        <img class="img-fluid" src="../static/css/img/IntroNormas.svg" alt="Imagem de apresentação de formas">
         <div>
-            <p>As citações se configuram de diversas formas no texto acadêmico, como mostramos nas telas de formas e funções. É 
-                a partir disso que também tentaremos ao máximo esclarecer para você como aplicar isso no seu trabalho, a partir das 
-                normas estabelecidas pela Associação Brasileira de Normas Técnicas (ABNT), seguida em todo o território nacional.
+            <br>
+            <p>As citações se configuram de diversas formas no texto acadêmico, como mostramos nas telas de <strong>formas</strong> e <strong>funções</strong>. É 
+                a partir disso <br> que também tentaremos ao máximo esclarecer para você como aplicar isso no seu trabalho, a partir das
+                normas estabelecidas pela Associação Brasileira de Normas <br> Técnicas (ABNT), seguida em todo o território nacional.
+                <br>
                 <br>
                 <strong>Obs.: a estrutura aqui explicitada está atualizada de acordo com a NBR 10520, de 2023.</strong>
             </p>
         </div>
     </section>
-    <!-- <section class="p-0 mt-5" id="intro">
-            <h1><strong>Formas</strong></h1>
-            <img class="img-fluid" src="../static/css/img/IntroFormas.svg" alt="Imagem de apresentação de formas"
-                height="450px" width="700px">
-            <div class="col-lg-12 text-center">
-                <p>O discurso do outro pode ser citado de várias formas. Assim como formas
-                    geométricas, as formas de menção à voz de outrem também se diferenciam
-                    por características e particularidades (que, em outra seção,
-                    demonstraremos agirem em conjunto com suas funcionalidades no texto acadêmico).
-                    Traremos exemplos para vocês das modalidades de
-                    <strong>evocação</strong>, <strong>reformulação</strong>, <strong>citação</strong>
-                    e <strong>ilhota citacional</strong>. No tópico <strong>EXEMPLOS</strong>
-                    a seguir, essas modalidades e suas aplicações são melhor demonstradas
-                    para que você compreenda melhor.
-                </p>
-            </div>
-        </section> -->
 
     <hr style="width: 90%; margin: auto; margin-bottom: 90px; margin-top: 90px;">
 
-    {% for forma in formas %}
+    <section class="row justify-content-center align-items-center">
+        <div class="col-md-5 col-lg-5 text-center p-4">
+            <img class="img-fluid ImagensFormas" src="../static/css/img/norma2.svg" alt="Imagem ilustrativa para a forma">
+        </div>
+        <div class="mt-4 col-md-5 col-lg-5 p-4" style="width: 80%;">
+            <h3>Conceitos importantes</h3>
+            <div class="mt-4 text-justify TextosFormas">
+                <ul>
+                    <li>Citação: menção a uma informação/ideia reportada de outro texto/fonte;</li>
+                    <li>Citação de citação: menção de uma citação em um texto, no caso de não ter acesso ao texto original;</li>
+                    <li>Citação direta: transcrição de parte do texto que é citado;</li>
+                    <li>Citação indireta: paráfrase baseada no texto consultado.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="row justify-content-center align-items-center mt-5 mb-5" style="background-color: #075985;">
+
+        <section class="p-0 mt-5" id="intro">
+
+        </section>
+        <div class="mt-4 col-md-5 col-lg-5 p-4 text-justify" style="width: 80%; color: #EEEEEE;">
+            <p>
+                As citações diretas de até três linhas devem estar entre aspas duplas, dentro do 
+                próprio parágrafo do texto, sendo utilizadas aspas simples para citações 
+                diretas dentro da própria citação.  Deve-se, além da referência ao sobrenome 
+                do autor, instituição responsável ou título incluído na sentença, seguir a data e 
+                página, separando-os por vírgula. Por exemplo:</p>
+                
+            <p><strong>“As crianças costumam ir à escola todos os dias úteis da semana, para ‘[...] 
+                    exercitar seus conhecimentos’ (Fonseca, 2023).” (Martins, 2020, p. 40)</strong></p>
+	        <p>Já as citações diretas com mais de três linhas, por sua vez, devem estar 
+            recuadas 4 cm da margem esquerda, com letra menor do que a do texto 
+            utilizado, sem utilização de aspas:</p>
+
+            <p><strong>As crianças costumam ir à escola todos os dias úteis 
+                da semana. Aos fins de semana, elas são instruídas a 
+                permanecerem em suas casas ou dedicarem o tempo 
+                livre ao lazer, podendo também realizar atividades 
+                extras. Isso é recomendado para que haja um 
+                descanso mental e emocional e consequentemente 
+                seja evitado o desgaste e exaustão física e 
+                psicológica. (Martins, 2020, p. 40)</strong></p>
+            
+        </div>
+        <div class="col-md-5 col-lg-5 text-center p-4">
+            <img class="img-fluid mt-5 mb-5" src="../static/css/img/norma3.svg"
+                alt="Imagem ilustrativa com Rosalind Franklin">
+        </div>
+        
+        <hr style="width: 90%; margin: auto; margin-bottom: 90px; margin-top: 90px;">
+
+        <div class="col-md-5 col-lg-5 text-center p-4">
+            <img class="img-fluid mt-5 mb-5" src="../static/css/img/norma4.svg"
+                alt="Imagem ilustrativa com Rosalind Franklin">
+        </div>
+
+        <div class="mt-4 col-md-5 col-lg-5 p-4 text-justify" style="width: 80%; color: #EEEEEE;">
+            <p>Além disso, caso haja, devem ser especificados(as) volume(s), tomo(s) ou 
+                seção(ões) da fonte consultada (Associação Brasileira de Normas Técnicas, 2023).</p>
+            <p> Exemplo de citação direta integral:<br>
+                    <strong>Fonseca (2023, p. 93)</strong></p>
+            <p>Exemplos de citação direta não integral: <br>
+                    <strong>(Fonseca, 2023, p. 93) <br>
+                        (Vieira; Martino; Salles, 2020, p. 10-22)
+                    </strong></p> 
+            <p>As citações indiretas têm a indicação da(s) página(s) consultada(s) como opcional, 
+                mas seguem a mesma lógica de sobrenome do autor e data separados por 
+                vírgulas.</p>
+            <p>Exemplo de citação indireta integral (com paginação opcional):<br>
+                <strong>Fonseca (2023)</strong></p>
+            <p>Exemplos de citação indireta não integral (com paginação opcional):<br>
+                <strong>(Fonseca, 2023) <br>(Vieira; Martino; Salles, 2020)</strong></p> 
+        </div>
+    </section>
+
+    <section class="p-0 mt-5" id="intro">
+        <h1><strong>Sistemas de chamada</strong></h1>
+        <img class="img-fluid" src="../static/css/img/IntroNormas2.svg" alt="Imagem de apresentação de formas">
+        <div>
+            <br>
+            <p>As citações são feitas no texto a partir de dois tipos de chamada: o sistema numérico ou o autor-data. É válido destacar que o sistema <br>
+                adotado ao início do trabalho deve ser seguido ao longo de todo o texto, além de ter relação com a própria configuração das referências.
+            </p>
+        </div>
+    </section>
+    <hr style="width: 90%; margin: auto; margin-bottom: 90px; margin-top: 90px;">
+
+    {% for norma in normas %}
 
     <section class="row justify-content-center align-items-center">
         <div class="col-md-5 col-lg-5 text-center p-4">
-            <img class="img-fluid ImagensFormas" src="{{ forma.imagem.url }}" alt="Imagem ilustrativa para a forma">
+            <img class="img-fluid ImagensFormas" src="{{ norma.imagem.url }}" alt="Imagem ilustrativa para a forma">
         </div>
         <div class="mt-4 col-md-5 col-lg-5 p-4" style="width: 80%;">
-            <h3>{{ forma.nome }}</h3>
+            <h3>{{ norma.nome }}</h3>
             <div class="mt-4 text-justify TextosFormas">
-                <p>{{ forma.descricao }}</p>
-                <p><strong>{{ forma.citacao }}</strong></p>
-                <p>{{ forma.referencia }}</p>
-                <p>{{ forma.explicacao }}</p>
+                <p>{{ norma.explicacao }}</p>
+                <p>{{ norma.explicacao2 }}</p>
+                <p>{{ norma.explicacao3 }}</p>
             </div>
         </div>
     </section>
