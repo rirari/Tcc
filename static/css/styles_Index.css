@@ -31,7 +31,8 @@ main {
 } */
 
 
-main h1 {
+main {
+    color: #075985;
     text-align: center;
     margin: 80px 0 80px 0;
     font-size: 36px;
@@ -84,7 +85,7 @@ main h1 {
 }
 
 #TextoBoxAzul{
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .texto {
