@@ -9,26 +9,43 @@ Index
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="../static/css/styles_Index.css" rel="stylesheet" />
 
-<section style="color: #075985;">
-    <h1><strong>Seja bem-vindo(a) ao MamaCita!</strong></h1>
-    <div class="container">
-        <img class="img1" src="../static/css/img/boas-vindas.svg" alt="Aspinha (personagem do site) dando boas-vindas!"
-            width="50%">
-        <div>
-            <div class="texto">
-                <br>
-                <p>
-                    Seu novo aliado acadêmico. O gerenciamento de vozes da ciência e a
-                    importância de trabalhos científicos explicados de forma clara para você.<br><br>
 
-                    Um projeto sem fins lucrativos que visa a auxiliar os estudantes
-                    (especialmente os que ainda estão se iniciando no meio científico) nas
-                    práticas acadêmicas em prol da ciência.
+<section class="container-fluid p-0">
+
+    <section>
+        <h1 class="mb-3"><strong>Seja bem-vindo(a) ao MamaCita!</strong></h1>
+        <div class="container">
+            <img class="img1" src="../static/css/img/boas-vindas.svg"
+                alt="Aspinha (personagem do site) dando boas-vindas!" width="50%">
+            <div>
+                <div class="texto">
+                    <br>
+                    <p>
+                        Seu novo aliado acadêmico. O gerenciamento de vozes da ciência e a
+                        importância de trabalhos científicos explicados de forma clara para você.<br><br>
+
+                        Um projeto sem fins lucrativos que visa a auxiliar os estudantes
+                        (especialmente os que ainda estão se iniciando no meio científico) nas
+                        práticas acadêmicas em prol da ciência.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="containerBox">
+        <div id="boxazul">
+            <div class="caixasDeTexto col-10 d-flex m-auto align-items-center">
+                <p>
+                    Referir-se ao discurso de especialistas na área de seu projeto, por exemplo, dá uma maior
+                    credibilidade ao trabalho acadêmico e confiança de que o estudo realizado tem um impacto
+                    importante para a sociedade.
                 </p>
             </div>
         </div>
-    </div>
+    </section>
 
+    <!-- 
     <section>
         <div id="boxazul">
             <div class="caixasDeTexto">
@@ -41,7 +58,7 @@ Index
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- <div class="containerBox" id="boxazul">
         <div class="caixasDeTexto" id="center">
@@ -75,7 +92,8 @@ Index
                     <p class="predondo"><strong class="topP">Pensado para o estudante</strong><br><br> O conteúdo do
                         site
                         abrange
-                        necessidades e práticas objetivas do escritor iniciante, considerando também possíveis desafios
+                        necessidades e práticas objetivas do escritor iniciante, considerando também possíveis
+                        desafios
                         e
                         dúvidas
                         na escrita do texto acadêmico e gerenciamento da literatura científica.
@@ -107,14 +125,14 @@ Index
                 </p>
             </div>
         </div>
-        <img class="img3" src="../static/css/img/ombro.svg" alt="Anões nos ombros de gigantes." width="50%">
+        <img class="img-fluid" src="../static/css/img/ombro.svg" alt="Anões nos ombros de gigantes." width="50%">
     </div>
 
     <hr style="width: 90%; margin: auto; margin-bottom: 90px; margin-top: 90px;">
 
-    <div class="container4 col-10" id="marginTop">
-        <img class="img3" src="../static/css/img/coracao.svg" alt="Aspinha (personagem do site) abrançando um coração."
-            width="50%">
+    <div class="container4 col-10">
+        <img class="img-fluid m-0" src="../static/css/img/coracao.svg"
+            alt="Aspinha (personagem do site) abrançando um coração." width="50%">
 
         <div>
             <div class="TextosInicio2" id="TextosInicio2">
@@ -133,5 +151,6 @@ Index
             </div>
         </div>
     </div>
+</section>
 </section>
 {% endblock %}

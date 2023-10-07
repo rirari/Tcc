@@ -13,7 +13,6 @@ def pagina_formas (request):
     }
     return render(request, 'core/formas.html',context)
 
-
 def pagina_funções (request):
     funções = Funções.objects.all()
     context ={

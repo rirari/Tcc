@@ -11,27 +11,78 @@ Quem é o autor?
 <link href="../static/css/styles_F&F.css" rel="stylesheet" />
 
 <section class="container-fluid p-0 mb-5">
-    <section class="p-0 mt-5" id="intro">
-        <h1><strong>Quem é o autor?</strong></h1>
+
+    <section class="container" id="intro">
+        <div class="p-0 mt-5">
+            <h1><strong>Quem é o autor?</strong></h1>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 col-lg-5 text-center p-4">
+                <img class="img-fluid" src="../static/css/img/PersonagemPlagio.svg"
+                    alt="Imagem ilustrativa para introduzir o assunto de plágio">
+            </div>
+            <div class="col-md-5 col-lg-5 p-0 row justify-content-center align-items-center">
+                <div class="mt-4 text-justify" style="width: 80%;">
+                    <p>
+                        O problema do plágio infelizmente ocorre de diversas formas no mundo acadêmico.
+                        O plágio de trabalhos acadêmicos se trata da tomada de um texto de outra autoria
+                        como seu, sem mencioná-lo ou dar os devidos créditos. Esse caso de violação dos
+                        direitos autorais é tratado também na legislação diante de sua seriedade, o que
+                        propõe que medidas cabíveis sejam tomadas. A Lei N° 9.610, de 19 de fevereiro de 1998,
+                        aponta e regulamenta a proteção de direitos autorais ou questões equivalentes (Brasil,
+                        1998).
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="row justify-content-center align-items-center">
-        <div class="col-md-5 col-lg-5 text-center p-4">
-            <img class="img-fluid" src="../static/css/img/PersonagemPlagio.svg"
-                alt="Imagem ilustrativa para introduzir o assunto de plágio">
-        </div>
-        <div class="mt-4 col-md-5 col-lg-5 p-4 text-justify" style="width: 80%;">
-            <p>
-                O problema do plágio infelizmente ocorre de diversas formas no mundo acadêmico.
-                O plágio de trabalhos acadêmicos se trata da tomada de um texto de outra autoria
-                como seu, sem mencioná-lo ou dar os devidos créditos. Esse caso de violação dos
-                direitos autorais é tratado também na legislação diante de sua seriedade, o que
-                propõe que medidas cabíveis sejam tomadas. A Lei N° 9.610, de 19 de fevereiro de 1998,
-                aponta e regulamenta a proteção de direitos autorais ou questões equivalentes (Brasil,
-                1998).
-            </p>
-        </div>
-    </section>
+
+
+
+
+    <!-- <section class="p-0 mt-5" id="intro">
+        <h1><strong>Quem é o autor?</strong></h1>
+
+        <div class="container row justify-content-center align-items-center">
+            <div class="col-md-5 col-lg-5 text-center p-4">
+                <img class="img-fluid" src="../static/css/img/PersonagemPlagio.svg"
+                    alt="Imagem ilustrativa para introduzir o assunto de plágio">
+            </div>
+
+            <div class="mt-4 col-md-5 col-lg-5 p-4 text-justify" style="width: 80%;">
+                <p>
+                    O problema do plágio infelizmente ocorre de diversas formas no mundo acadêmico.
+                    O plágio de trabalhos acadêmicos se trata da tomada de um texto de outra autoria
+                    como seu, sem mencioná-lo ou dar os devidos créditos. Esse caso de violação dos
+                    direitos autorais é tratado também na legislação diante de sua seriedade, o que
+                    propõe que medidas cabíveis sejam tomadas. A Lei N° 9.610, de 19 de fevereiro de 1998,
+                    aponta e regulamenta a proteção de direitos autorais ou questões equivalentes (Brasil,
+                    1998).
+                </p>
+            </div>
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section class="row justify-content-center align-items-center mt-5 mb-5" style="background-color: #075985;">
         <div class="mt-4 col-md-5 col-lg-5 p-4 text-justify" style="width: 80%; color: #EEEEEE;">
@@ -79,13 +130,14 @@ Quem é o autor?
         <hr style="width: 90%; margin: auto; margin-bottom: 50px; margin-top: 50px;">
 
         <div class="container px-4 px-lg-5 mt-3 m-0">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-sx-1 justify-content-center">
+            <div
+                class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-sx-1 align-items-center justify-content-center">
                 {% for plagios in plagios %}
                 <div class="col-md-6 mb-5">
-                    <div class="card" style="width: 18rem; background-color: #fdf4ff;">
+                    <div class="card" style="width: 20rem; background-color: #fdf4ff;">
                         <img class="card-img-top" src="{{ plagios.imagem.url }}" alt="Imagem de capa do card">
                         <div class="card-body">
-                            <h5 class="card-title text-center">{{ plagios.nome }}</h5>
+                            <h5 class="card-title text-center">{{ plagios.nomePlagio }}</h5>
                             <p class="card-text">{{ plagios.descricao }}</p>
                         </div>
                     </div>

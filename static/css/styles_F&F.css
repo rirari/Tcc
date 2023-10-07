@@ -82,7 +82,7 @@ p {
     width: 100%;
 }
 
-.preRodape{
+.preRodape {
     margin-bottom: 220px;
 }
 
@@ -96,15 +96,15 @@ p {
     margin: 40px 80px 40px 0px;
 }
 
-.TextosFormas{
+.TextosFormas {
     width: 100%;
 }
-
+ 
 #intro {
     width: 90%;
     text-align: center;
     margin: auto;
-}
+} 
 
 h3 {
     font-size: 20px;
@@ -112,9 +112,10 @@ h3 {
 }
 
 @media (max-width: 768px) {
-    .ImagensFormas{
+    .ImagensFormas {
         width: 60%;
     }
+
     h1 {
         font-size: 20px;
     }
