@@ -152,8 +152,8 @@ main section {
 
 #containerFotos {
     margin: auto;
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-top: 20%;
+    padding-bottom: 18%;
     color: #FFFFFF;
 }
 
@@ -162,7 +162,6 @@ main section {
     padding: 20px;
     margin: auto;
     display: flex;
-    align-items: center;
     text-align: left;
     background-color: #0284C7;
 }
