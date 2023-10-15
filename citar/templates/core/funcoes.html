@@ -14,8 +14,9 @@ Funções
 
     <section class="container p-0 mt-5" id="intro">
         <div>
-            <h1><strong>Funções</strong></h1>
-            <img class="img-fluid mb-3" src="../static/css/img/IntroFuncoes.svg" alt="Imagem de apresentação de funções">
+            <h1 class="mb-5"><strong>Funções</strong></h1>
+            <img class="img-fluid mb-3" src="../static/css/img/IntroFuncoes.svg"
+                alt="Imagem de apresentação de funções">
         </div>
         <div class="col-md-12 text-justify">
             <p> Assim como cada uma das células do nosso corpo tem uma função, as menções à
@@ -31,16 +32,19 @@ Funções
 
     {% for funções in funções %}
 
-    <section class="row justify-content-center align-items-center">
-        <div class="col-md-5 col-lg-5 text-center p-4">
-            <img class="img-fluid ImagensFormas" src="{{ funções.imagem.url }}" alt="Imagem ilustrativa para a função">
-        </div>
-        <div class="mt-4 col-md-5 col-lg-5 p-4" style="width: 80%;">
-            <h3>{{ funções.nome }}</h3>
-            <div class="mt-4 text-justify TextosFormas">
-                <p>{{ funções.descricao }}</p>
-                <p><strong>{{ funções.citacao }}</strong></p>
-                <p>{{ funções.referencia }}</p>
+    <section class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 col-lg-6 text-center p-4">
+                <img class="img-fluid ImagensFormas" src="{{ funções.imagem.url }}"
+                    alt="Imagem ilustrativa para a função">
+            </div>
+            <div class="mt-4 col-md-6 col-lg-6 p-4" style="width: 80%;">
+                <h3>{{ funções.nome }}</h3>
+                <div class="mt-4 text-justify TextosFormas">
+                    <p>{{ funções.descricao }}</p>
+                    <p><strong>{{ funções.citacao }}</strong></p>
+                    <p>{{ funções.referencia }}</p>
+                </div>
             </div>
         </div>
     </section>
@@ -48,6 +52,7 @@ Funções
     <hr style="width: 90%; margin: auto; margin-bottom: 90px; margin-top: 90px;">
 
     {% endfor %}
+
 </section>
 
 {% endblock %}
