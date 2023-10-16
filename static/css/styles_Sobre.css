@@ -124,3 +124,41 @@ main section {
 h4 {
     font-size: 30px;
 }
+
+
+/* // Dispositivos extra large (desktops grandes com 1200px ou mais) */
+@media (min-width: 1200px) {}
+
+/* // Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* // Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* // Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* // Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    h1, h2{
+        font-size: 24px;
+    }
+}
