@@ -50,6 +50,14 @@ class Normas(models.Model):
     def __str__(self):
         return self.nome
     
+class Suporte(models.Model):
+    nome = models.CharField(max_length=300, verbose_name='Nome completo')
+    email = models.EmailField()
+    mensagem = models.TextField(verbose_name='Mensagem')
+
+    def __str__(self):
+        return self.nome
+    
 # class Autores(models.Model):
 #     nome = models.CharField(max_length=150, verbose_name='Nome do(a) autor(a) recomendado(a)')
 #     descricao = models.TextField(verbose_name='Descrição')

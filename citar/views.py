@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Formas,Funções,Plagio,Sites, Normas
+
+from citar.forms import SuporteForm
+from .models import Formas,Funções,Plagio,Sites, Normas, Suporte
 
 # Create your views here.
 
@@ -43,3 +45,4 @@ def pagina_sites (request):
 
 def pagina_sobre (request):
     return render(request, 'core/sobre.html')
+
