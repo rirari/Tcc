@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -127,3 +128,29 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 STATICFILES_DIRS=[BASE_DIR / "static"]
+
+# JAZZMIN_SETTINGS
+
+JAZZMIN_SETTINGS = {
+
+   "site_title": "MamaCita Admin",
+
+    "site_header": "MamaCita",
+
+    "site_brand": "MamaCita",
+
+    "site_logo": "../static/css/img/LogoMamaCita.svg",
+
+    "welcome_sign": "Acesso restrito ao pessoal autorizado(a)",
+
+    "login_logo": None,
+
+    "copyright": "MamaCita Ltd",
+
+    "site_icon": None,
+}
+
+# JAZZMIN_UI_TWEAKS = {
+
+#     "theme": "darkly",
+# }
